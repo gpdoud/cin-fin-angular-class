@@ -1,0 +1,11 @@
+<p>App.Component</p>
+<table class="table table-sm">
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <tr *ngFor="let student of students" [style.color]="student.color">
+    <td>{{student.name}}</td>
+    <td>{{student.role}}</td>
+  </tr>
+</table>
